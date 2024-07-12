@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:route_task/ui/screens/home_screen.dart';
 
+import 'domain/di/di.dart';
+
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 

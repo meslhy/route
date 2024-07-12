@@ -22,9 +22,10 @@ class DataResponse {
     limit = json['limit'];
   }
   List<Products>? products;
-  int? total;
-  int? skip;
-  int? limit;
+  num? total;
+  num? skip;
+  num? limit;
+
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -120,21 +121,21 @@ class Products {
   String? title;
   String? description;
   String? category;
-  double? price;
-  double? discountPercentage;
-  double? rating;
+  num? price;
+  num? discountPercentage;
+  num? rating;
   int? stock;
   List<String>? tags;
   String? brand;
   String? sku;
-  int? weight;
+  num? weight;
   Dimensions? dimensions;
   String? warrantyInformation;
   String? shippingInformation;
   String? availabilityStatus;
   List<Reviews>? reviews;
   String? returnPolicy;
-  int? minimumOrderQuantity;
+  num? minimumOrderQuantity;
   Meta? meta;
   List<String>? images;
   String? thumbnail;
@@ -262,9 +263,9 @@ class Dimensions {
     height = json['height'];
     depth = json['depth'];
   }
-  double? width;
-  double? height;
-  double? depth;
+  num? width;
+  num? height;
+  num? depth;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
